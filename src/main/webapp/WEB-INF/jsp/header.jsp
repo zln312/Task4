@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -13,28 +14,41 @@
     <div class="top w">
         <div class="num">客服热线：010-594-78634</div>
         <div class="logos">
-            <img src="images/wx.png" alt="">
-            <img src="images/qq.png" alt="">
-            <img src="images/xl.jpg" alt="">
+
+            <c:choose>
+                <c:when test="${cookie.name.value==null}">
+                    <a href="http://localhost:8080/test11"  class="btn" >登录</a>|
+                    <a href="http://localhost:8080/register" class="btn">注册</a>
+                </c:when>
+                <c:otherwise>
+                    <a>${cookie.name.value}</a>|
+                    <a href="/exit" class="btn">退出</a>
+                </c:otherwise>
+            </c:choose>
+
+            <img src="/images/wx.png" alt="">
+            <img src="/images/qq.png" alt="">
+            <img src="/images/xl.jpg" alt="">
         </div>
     </div>
     <div class="top1">
+
         登陆&nbsp<span>|</span>&nbsp注册
     </div>
     <nav>
         <ul class=" nav1 w">
-            <img src="images/logo.png" alt="">
-            <li><a href="firstPage">首页</a></li>
-            <li><a href="thirdPage">职业</a></li>
-            <li><a href="secondPage">推荐</a></li>
+            <img src="/images/logo.png" alt="">
+            <li><a href="/firstPage">首页</a></li>
+            <li><a href="/u/thirdPage">职业</a></li>
+            <li><a href="/secondPage">推荐</a></li>
             <li><a href="">关于</a></li>
         </ul>
         <div class="dropdown">
-            <img class="ji" src="images/logo.png" alt="">
+            <img class="ji" src="/images/logo.png" alt="">
             <button class="btn dropdown-toggle clearfix" type="button" id="dropdownMenu1" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="true">
                     <span>
-                        <img src="images/btn1.png" alt="">
+                        <img src="/images/btn1.png" alt="">
                     </span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">

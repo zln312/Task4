@@ -4,7 +4,7 @@
 <%@page language="java" contentType="text/html; UTF-8" pageEncoding="UTF-8" isELIgnored="false" isErrorPage="true" %>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
     <title>职位</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -56,12 +56,12 @@
                         <div class="sec">
                             <div class="menk">门槛
                                 <c:forEach begin="1" end="${Job.doorsill}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                             <div class="nan">难易程度
                                 <c:forEach begin="1" end="${Job.index}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                         </div>
@@ -110,12 +110,12 @@
                         <div class="sec">
                             <div class="menk">门槛
                                 <c:forEach begin="1" end="${Job.doorsill}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                             <div class="nan">难易程度
                                 <c:forEach begin="1" end="${Job.index}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                         </div>
@@ -164,12 +164,12 @@
                         <div class="sec">
                             <div class="menk">门槛
                                 <c:forEach begin="1" end="${Job.doorsill}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                             <div class="nan">难易程度
                                 <c:forEach begin="1" end="${Job.index}">
-                                    <img src="images/star.png" alt="">
+                                    <img src="/images/star.png" alt="">
                                 </c:forEach>
                             </div>
                         </div>

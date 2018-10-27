@@ -30,8 +30,6 @@ public class Job {
         this.count = count;
     }
 
-
-
     public String getBackground() {
         return background;
     }

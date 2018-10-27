@@ -34,7 +34,7 @@
                         </div>
                         <div class="third col-xs-12 col-md-3">
                             <p>微信公众号</p>
-                            <img src="images/qcode.jpg" alt="">
+                            <img src="/images/qcode.jpg" alt="">
                         </div>
                     </div>
                 </div>
